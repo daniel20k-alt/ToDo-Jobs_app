@@ -10,12 +10,27 @@ import SwiftUI
 
 struct ContentView: View {
     var storedTasks: StoredTasks
-
+@State var modalIsPresented = false
+    
     var body: some View {
         
-        List(storedTasks.tasks) { task in
-            Text(task.name)
+    NavigationView {
+            List(storedTasks.tasks) { task in
+                Text(task.name)
         }
+        .navigationBarTitle("Tasks")
+            .navigationBarItems(trailing:
+                Button(action: { self.modalIsPresented = true })
+                { Image(systemName: "plus" )
+                    
+        }
+        )
+        
+        }
+    .sheet(isPresented: $modalIsPresented) {
+        NewTaskView()
+        }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {
@@ -23,4 +38,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView(storedTasks: StoredTasks())
     }
 }
-}
+
