@@ -9,8 +9,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var storedTasks = StoredTasks()
+
     var body: some View {
-        Text("Hello, World!")
+        List(storedTasks.tasks.indices) { index in
+            Text(self.storedTasks.tasks[index].name)
+        }
     }
 }
 

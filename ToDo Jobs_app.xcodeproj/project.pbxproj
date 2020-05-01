@@ -13,6 +13,8 @@
 		EE19E100245C8DDF0027D4A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE19E0FF245C8DDF0027D4A7 /* Assets.xcassets */; };
 		EE19E103245C8DDF0027D4A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE19E102245C8DDF0027D4A7 /* Preview Assets.xcassets */; };
 		EE19E106245C8DDF0027D4A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE19E104245C8DDF0027D4A7 /* LaunchScreen.storyboard */; };
+		EE19E117245C981C0027D4A7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E116245C981C0027D4A7 /* Task.swift */; };
+		EE19E119245C98400027D4A7 /* StoredTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E118245C98400027D4A7 /* StoredTasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		EE19E102245C8DDF0027D4A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE19E105245C8DDF0027D4A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE19E107245C8DDF0027D4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE19E116245C981C0027D4A7 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		EE19E118245C98400027D4A7 /* StoredTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredTasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,7 @@
 				EE19E0F9245C8DDB0027D4A7 /* AppDelegate.swift */,
 				EE19E0FB245C8DDB0027D4A7 /* SceneDelegate.swift */,
 				EE19E0FD245C8DDB0027D4A7 /* ContentView.swift */,
+				EE19E111245C8E420027D4A7 /* Models */,
 				EE19E0FF245C8DDF0027D4A7 /* Assets.xcassets */,
 				EE19E104245C8DDF0027D4A7 /* LaunchScreen.storyboard */,
 				EE19E107245C8DDF0027D4A7 /* Info.plist */,
@@ -73,6 +78,15 @@
 				EE19E102245C8DDF0027D4A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE19E111245C8E420027D4A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE19E116245C981C0027D4A7 /* Task.swift */,
+				EE19E118245C98400027D4A7 /* StoredTasks.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +160,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE19E117245C981C0027D4A7 /* Task.swift in Sources */,
+				EE19E119245C98400027D4A7 /* StoredTasks.swift in Sources */,
 				EE19E0FA245C8DDB0027D4A7 /* AppDelegate.swift in Sources */,
 				EE19E0FC245C8DDB0027D4A7 /* SceneDelegate.swift in Sources */,
 				EE19E0FE245C8DDB0027D4A7 /* ContentView.swift in Sources */,
