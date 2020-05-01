@@ -12,14 +12,15 @@ struct ContentView: View {
     var storedTasks = StoredTasks()
 
     var body: some View {
-        List(storedTasks.tasks.indices) { index in
-            Text(self.storedTasks.tasks[index].name)
+        
+        List(storedTasks.tasks) { task in
+            Text(task.name)
         }
-    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
 }

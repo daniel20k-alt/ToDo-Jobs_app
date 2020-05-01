@@ -6,9 +6,11 @@
 //  Copyright © 2020 MeerkatWorks. All rights reserved.
 //
 
+import Foundation
 
-
-struct Task {
+struct Task: Identifiable {
+    
+    let id = UUID()
     var name: String
     var completed = false
     
