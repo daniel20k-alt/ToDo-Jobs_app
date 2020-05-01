@@ -15,6 +15,7 @@
 		EE19E106245C8DDF0027D4A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE19E104245C8DDF0027D4A7 /* LaunchScreen.storyboard */; };
 		EE19E117245C981C0027D4A7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E116245C981C0027D4A7 /* Task.swift */; };
 		EE19E119245C98400027D4A7 /* StoredTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E118245C98400027D4A7 /* StoredTasks.swift */; };
+		EE19E11D245CBAE40027D4A7 /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E11C245CBAE40027D4A7 /* NewTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EE19E107245C8DDF0027D4A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE19E116245C981C0027D4A7 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		EE19E118245C98400027D4A7 /* StoredTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredTasks.swift; sourceTree = "<group>"; };
+		EE19E11C245CBAE40027D4A7 /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 			children = (
 				EE19E0F9245C8DDB0027D4A7 /* AppDelegate.swift */,
 				EE19E0FB245C8DDB0027D4A7 /* SceneDelegate.swift */,
-				EE19E0FD245C8DDB0027D4A7 /* ContentView.swift */,
+				EE19E11E245CBB8F0027D4A7 /* Views */,
 				EE19E111245C8E420027D4A7 /* Models */,
 				EE19E0FF245C8DDF0027D4A7 /* Assets.xcassets */,
 				EE19E104245C8DDF0027D4A7 /* LaunchScreen.storyboard */,
@@ -87,6 +89,15 @@
 				EE19E118245C98400027D4A7 /* StoredTasks.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EE19E11E245CBB8F0027D4A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE19E0FD245C8DDB0027D4A7 /* ContentView.swift */,
+				EE19E11C245CBAE40027D4A7 /* NewTaskView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			files = (
 				EE19E117245C981C0027D4A7 /* Task.swift in Sources */,
 				EE19E119245C98400027D4A7 /* StoredTasks.swift in Sources */,
+				EE19E11D245CBAE40027D4A7 /* NewTaskView.swift in Sources */,
 				EE19E0FA245C8DDB0027D4A7 /* AppDelegate.swift in Sources */,
 				EE19E0FC245C8DDB0027D4A7 /* SceneDelegate.swift in Sources */,
 				EE19E0FE245C8DDB0027D4A7 /* ContentView.swift in Sources */,
