@@ -6,10 +6,10 @@
 //  Copyright © 2020 MeerkatWorks. All rights reserved.
 //
 
+import Combine
 
-
-class StoredTasks {
-    var tasks = [
+class StoredTasks: ObservableObject {
+   @Published var tasks = [
     "clean up room",
     "clean dust",
     "learn new song",

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var storedTasks: StoredTasks
+   @ObservedObject var storedTasks: StoredTasks
 @State var modalIsPresented = false
     
     var body: some View {
@@ -21,10 +21,7 @@ struct ContentView: View {
         .navigationBarTitle("Tasks")
             .navigationBarItems(trailing:
                 Button(action: { self.modalIsPresented = true })
-                { Image(systemName: "plus" )
-                    
-        }
-        )
+                { Image(systemName: "plus" )})
         
         }
     .sheet(isPresented: $modalIsPresented) {
