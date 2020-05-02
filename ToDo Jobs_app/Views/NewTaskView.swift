@@ -9,17 +9,30 @@
 import SwiftUI
 
 struct NewTaskView: View {
-   @State var text = ""
+    var storedTask: StoredTasks
     
+    
+    
+    @State var text = ""
     
     var body: some View {
-        TextField("Task name here", text: $text)
-
+        
+        Form {
+            
+            TextField("Task name here", text: $text)
+            Button("Adauga") {
+                
+                self.storedTask.tasks.append(Task(name: self.text))
+                
+            }
+            .disabled(text.isEmpty)
+            
+        }
     }
 }
 
 struct NewTaskView_Previews: PreviewProvider {
     static var previews: some View {
-        NewTaskView()
+        NewTaskView(storedTask: StoredTasks())
     }
 }
