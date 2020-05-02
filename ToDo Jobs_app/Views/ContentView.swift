@@ -15,17 +15,11 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(storedTasks.tasks) { index in
-                    RowView(task: self.$storedTasks.tasks[index])
-                }
-                .onMove { sourceIndices, destinationIndex in
-                    self.storedTasks.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
-                }
-                .onDelete { indexSet in
-                    self.storedTasks.tasks.remove(atOffsets: indexSet)
+                ForEach(storedTasks.prioritizedTasks) { index in SectionView(prioritizedTasks: self.$storedTasks.prioritizedTasks[index])
                     
                 }
             }
+                
             .navigationBarTitle("Tasks")
             .navigationBarItems(
                 leading: EditButton(),

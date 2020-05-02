@@ -22,6 +22,7 @@
 		EE19E136245DE81B0027D4A7 /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE19E132245DE81B0027D4A7 /* ForEach.swift */; };
 		EE36707A245E085C00C9D7A6 /* Task.Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE367079245E085B00C9D7A6 /* Task.Priority.swift */; };
 		EE36707C245E0D7100C9D7A6 /* StoredTasks.PrioritizedTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36707B245E0D7100C9D7A6 /* StoredTasks.PrioritizedTasks.swift */; };
+		EE36707E245E13C800C9D7A6 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE36707D245E13C800C9D7A6 /* SectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EE19E132245DE81B0027D4A7 /* ForEach.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 		EE367079245E085B00C9D7A6 /* Task.Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.Priority.swift; sourceTree = "<group>"; };
 		EE36707B245E0D7100C9D7A6 /* StoredTasks.PrioritizedTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredTasks.PrioritizedTasks.swift; sourceTree = "<group>"; };
+		EE36707D245E13C800C9D7A6 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				EE19E0FD245C8DDB0027D4A7 /* ContentView.swift */,
+				EE36707D245E13C800C9D7A6 /* SectionView.swift */,
 				EE19E11C245CBAE40027D4A7 /* NewTaskView.swift */,
 				EE19E123245DE5E40027D4A7 /* TaskEditingView.swift */,
 				EE19E121245DE16C0027D4A7 /* RowView.swift */,
@@ -205,6 +208,7 @@
 				EE36707C245E0D7100C9D7A6 /* StoredTasks.PrioritizedTasks.swift in Sources */,
 				EE19E0FA245C8DDB0027D4A7 /* AppDelegate.swift in Sources */,
 				EE36707A245E085C00C9D7A6 /* Task.Priority.swift in Sources */,
+				EE36707E245E13C800C9D7A6 /* SectionView.swift in Sources */,
 				EE19E0FC245C8DDB0027D4A7 /* SceneDelegate.swift in Sources */,
 				EE19E135245DE81B0027D4A7 /* IndexedCollection.swift in Sources */,
 				EE19E0FE245C8DDB0027D4A7 /* ContentView.swift in Sources */,
