@@ -19,7 +19,7 @@ struct ContentView: View {
                     
                 }
             }
-                
+        .listStyle(GroupedListStyle())
             .navigationBarTitle("Tasks")
             .navigationBarItems(
                 leading: EditButton(),
