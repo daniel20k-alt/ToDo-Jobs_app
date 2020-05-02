@@ -11,7 +11,7 @@ import SwiftUI
 struct NewTaskView: View {
     var storedTask: StoredTasks
     
-    
+    @Environment(\.presentationMode) var presentationMode
     
     @State var text = ""
     
@@ -23,6 +23,9 @@ struct NewTaskView: View {
             Button("Adauga") {
                 
                 self.storedTask.tasks.append(Task(name: self.text))
+               
+                
+                self.presentationMode.wrappedValue.dismiss()
                 
             }
             .disabled(text.isEmpty)
