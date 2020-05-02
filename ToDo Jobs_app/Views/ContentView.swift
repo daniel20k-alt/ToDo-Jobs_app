@@ -15,8 +15,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                ForEach(storedTasks.tasks) { task in
-                    Text(task.name)
+                ForEach(storedTasks.tasks) { index in
+                    RowView(task: self.$storedTasks.tasks[index])
                 }
                 .onMove { sourceIndices, destinationIndex in
                     self.storedTasks.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
