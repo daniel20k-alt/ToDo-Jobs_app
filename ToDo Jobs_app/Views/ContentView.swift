@@ -18,13 +18,18 @@ struct ContentView: View {
                 ForEach(storedTasks.tasks) { task in
                     Text(task.name)
                 }
+                .onMove { sourceIndices, destinationIndex in
+                    self.storedTasks.tasks.move(fromOffsets: sourceIndices, toOffset: destinationIndex)
+                }
                 .onDelete { indexSet in
                     self.storedTasks.tasks.remove(atOffsets: indexSet)
                     
                 }
             }
             .navigationBarTitle("Tasks")
-            .navigationBarItems(trailing:
+            .navigationBarItems(
+                leading: EditButton(),
+                trailing:
                 Button(action: { self.modalIsPresented = true })
                 { Image(systemName: "plus" )})
             
