@@ -21,6 +21,20 @@ struct NewTaskView: View {
         Form {
             
             TextField("Task name here", text: $text)
+            
+            
+            
+            VStack {
+                Text("Priority:")
+            Picker("Priority", selection: $priority.caseIndex) {
+                ForEach(Task.Priority.allCases.indices) { priorityIndex in
+                    Text(Task.Priority.allCases[priorityIndex].rawValue.capitalized).tag(priorityIndex)
+                    
+                }
+            }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            
             Button("Adauga") {
                 
                 
