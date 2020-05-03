@@ -9,14 +9,6 @@
 import Combine
 
 class StoredTasks: ObservableObject {
-   @Published var tasks = [
-    "clean up room",
-    "clean dust",
-    "learn new song",
-    "read a book",
-    "paint the walls",
-    "other"
-        ].map { Task(name: $0) }
     
     @Published var prioritizedTasks = [
         PrioritizedTasks.init(priority: .high, names: [
@@ -42,6 +34,14 @@ class StoredTasks: ObservableObject {
             "other"]
         )
     ]
+    
+    func getIndex(for priority: Task.Priority) -> Int {
+        prioritizedTasks.firstIndex { $0.priority == priority }!
+    }
+    
+    
+    
+    
 }
 
 private extension StoredTasks.PrioritizedTasks {
